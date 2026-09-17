@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CASIO Style Calculator | CodeAlpha</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="calculator-wrapper">
+
+        <section class="calculator">
+
+            <!-- Brand -->
+            <div class="brand-section">
+                <div class="brand">CASIO</div>
+                <div class="model">fx-991EX • CLASSWIZ</div>
+            </div>
+
+            <!-- Display -->
+            <div class="display-container">
+
+                <div class="display-info">
+                    <span id="memoryIndicator">M</span>
+                    <span id="modeIndicator">COMP</span>
+                </div>
+
+                <div id="expression" class="expression"></div>
+
+                <div id="display" class="display">
+                    0
+                </div>
+
+            </div>
+
+            <!-- Top Controls -->
+            <div class="top-controls">
+
+                <button class="function-btn" data-action="memory-clear">
+                    MC
+                </button>
+
+                <button class="function-btn" data-action="memory-recall">
+                    MR
+                </button>
+
+                <button class="function-btn" data-action="memory-add">
+                    M+
+                </button>
+
+                <button class="function-btn" data-action="memory-subtract">
+                    M−
+                </button>
+
+                <button class="function-btn" data-action="history">
+                    HISTORY
+                </button>
+
+            </div>
+
+            <!-- Calculator Buttons -->
+            <div class="buttons">
+
+                <!-- Row 1 -->
+                <button class="special-btn" data-action="clear">
+                    AC
+                </button>
+
+                <button class="special-btn" data-action="delete">
+                    DEL
+                </button>
+
+                <button class="function-btn" data-value="%">
+                    %
+                </button>
+
+                <button class="operator-btn" data-value="÷">
+                    ÷
+                </button>
+
+                <!-- Row 2 -->
+                <button data-value="7">7</button>
+                <button data-value="8">8</button>
+                <button data-value="9">9</button>
+
+                <button class="operator-btn" data-value="×">
+                    ×
+                </button>
+
+                <!-- Row 3 -->
+                <button data-value="4">4</button>
+                <button data-value="5">5</button>
+                <button data-value="6">6</button>
+
+                <button class="operator-btn" data-value="−">
+                    −
+                </button>
+
+                <!-- Row 4 -->
+                <button data-value="1">1</button>
+                <button data-value="2">2</button>
+                <button data-value="3">3</button>
+
+                <button class="operator-btn" data-value="+">
+                    +
+                </button>
+
+                <!-- Row 5 -->
+                <button class="zero-btn" data-value="0">
+                    0
+                </button>
+
+                <button data-value=".">
+                    .
+                </button>
+
+                <button class="special-btn" data-action="sign">
+                    ±
+                </button>
+
+                <button class="equals-btn" data-action="equals">
+                    =
+                </button>
+
+            </div>
+
+            <!-- Scientific Functions -->
+            <div class="scientific">
+
+                <button data-function="sqrt">
+                    √
+                </button>
+
+                <button data-function="square">
+                    x²
+                </button>
+
+                <button data-function="reciprocal">
+                    1/x
+                </button>
+
+                <button data-function="sin">
+                    sin
+                </button>
+
+                <button data-function="cos">
+                    cos
+                </button>
+
+                <button data-function="tan">
+                    tan
+                </button>
+
+                <button data-function="log">
+                    log
+                </button>
+
+                <button data-function="ln">
+                    ln
+                </button>
+
+            </div>
+
+            <!-- Footer -->
+            <footer>
+                <span>CODEALPHA • TASK 2</span>
+                <span>Professional Calculator</span>
+            </footer>
+
+        </section>
+
+    </main>
+
+    <!-- History Modal -->
+    <div id="historyModal" class="modal">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h2>Calculation History</h2>
+
+                <button id="closeHistory">
+                    ×
+                </button>
+            </div>
+
+            <div id="historyList" class="history-list">
+                <p class="empty-history">
+                    No calculations yet.
+                </p>
+            </div>
+
+            <button id="clearHistory" class="clear-history">
+                Clear History
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
