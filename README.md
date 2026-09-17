@@ -84,7 +84,8 @@ The objective of this project is to demonstrate fundamental frontend development
 
   **Project Preview**
 
-![Calculator Screenshot](screenshot.png)
+![Calculator Screenshot](<img width="587" height="912" alt="image" src="https://github.com/user-attachments/assets/c4372ee8-6793-47bf-ab0d-e26f9a0025ef" />
+)
 
   **Internship Information**
 
